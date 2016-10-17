@@ -10,7 +10,7 @@ You should have zsh as your shell
 ## Installation
 Clone the repo
 ```
-git clone git@github.com/bangthetable/dotfiles ~/dotfiles
+git clone git@github.com/bangthetable/dotfiles.git ~/.dotfiles
 ```
 
 Install [rcm](https://github.com/thoughtbot/rcm)
@@ -21,7 +21,7 @@ brew install rcm
 
 Install the dotfiles:
 ```
-env RCRC=$HOME/dotfiles/rcrc rcup
+env RCRC=$HOME/.dotfiles/rcrc rcup
 ```
 
 This will create appropriate symlinks for the dotfiles in your home directory.
