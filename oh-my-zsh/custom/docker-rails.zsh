@@ -10,7 +10,16 @@ alias dcs="docker-compose stop"
 alias dexit="docker exec -it"
 alias dcp="docker-compose pull"
 alias dcpb="docker-compose pull && docker-compose build"
-
+alias r="ehq_reporting.unicorn_1"
+alias p="ehq_v2.puma_1"
+alias mysql_ehq="docker exec -it ehq_db_1 mysql -u ehquser -pehq321 ehq_development"
+alias rrc="docker exec -it ehq_reporting.puma_1 rails c"
+alias rlog="docker exec -it ehq_reporting.puma_1 tail -f log/development.log"
+alias prc="docker exec -it ehq_v2.puma_1 rails c"
+alias plog="docker exec -it ehq_v2.puma_1 tail -f log/development.log"
+v2="ehq_v2.puma_1"
+rp="ehq_reporting.puma_1" 
+Include a link to the ticket, if any.
 # Helper functions for using docker with rails
 drc() {
     [ $# -eq 0 ] && { echo "\nUsage: $0 app_container_name [-s]\n"; return 1; }

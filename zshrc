@@ -7,7 +7,7 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git bundler rails zeus brew)
-
+export PATH="/usr/local/bin:$PATH"
 source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8

@@ -1,6 +1,6 @@
 [user]
-	name = John Doe
-	email = johndoe@bangthetable.com
+	name = Akanksha Agarwal
+	email = akanksha@bangthetable.com
 [pull]
 	rebase = true
 [push]
@@ -11,12 +11,13 @@
 [fetch]
 	prune = true
 [github]
-	user = johndoe
+	user = akanksha007
 [rerere]
 	enabled = true
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = input
+	editor = subl -n -w
 [commit]
         template = ~/.gitmessage
 [url "git@github.com:bangthetable/"]
