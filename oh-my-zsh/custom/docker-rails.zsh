@@ -15,9 +15,9 @@ alias p="ehq_v2.puma_1"
 alias mysql_ehq="docker exec -it ehq_db_1 mysql -u ehquser -pehq321 ehq_development"
 alias rrc="docker exec -it ehq_reporting.puma_1 rails c"
 alias rlog="docker exec -it ehq_reporting.puma_1 tail -f log/development.log"
-alias prc="docker exec -it ehq_v2.puma_1 rails c"
-alias plog="docker exec -it ehq_v2.puma_1 tail -f log/development.log"
-v2="ehq_v2.puma_1"
+alias prc="docker exec -it ehq_v2.unicorn_1 rails c"
+alias plog="docker exec -it ehq_v2.unicorn_1 tail -f log/development.log"
+v2="ehq_v2.unicorn_1"
 rp="ehq_reporting.puma_1" 
 Include a link to the ticket, if any.
 # Helper functions for using docker with rails

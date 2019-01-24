@@ -14,3 +14,9 @@ export LANG=en_US.UTF-8
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+. `brew --prefix`/etc/profile.d/z.sh
+
+prompt_context () { }
